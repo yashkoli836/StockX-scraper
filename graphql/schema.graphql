@@ -1,0 +1,14 @@
+type Product {
+  id: ID!
+  name: String!
+  currentMarketPrice: Float!
+  sizeAvailability: [String!]!
+  description: String
+  brandName: String!
+  productDetails: String
+  productImages: [String!]!
+}
+
+type Query {
+  getProductData(url: String!): Product
+}
